@@ -6,26 +6,31 @@ class GestureDetectorTest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('GestureDetectorTest'),
+      ),
+      body: Column(
+        children: [
 
-        _MenuWidgets(
-          title: 'menu_1',
-          msg: 'menu_1 click',
-        ),
+          _MenuWidgets(
+            title: 'menu_1',
+            msg: 'menu_1 click',
+          ),
 
-        _MenuWidgets(
-          title: 'menu_2',
-          msg: 'menu_2 click',
-        ),
+          _MenuWidgets(
+            title: 'menu_2',
+            msg: 'menu_2 click',
+          ),
 
-        _MenuWidgets(
-          title: 'menu_3',
-          msg: 'menu_3 click',
-        ),
-        
-      ],
-      
+          _MenuWidgets(
+            title: 'menu_3',
+            msg: 'menu_3 click',
+          ),
+
+        ],
+
+      ),
     );
   }
 }
